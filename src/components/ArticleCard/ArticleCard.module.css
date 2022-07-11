@@ -63,8 +63,15 @@
     content: '';
     width: 25px;
     height: 25px;
-    background-image: url(../../assets/images/blog/clock.png);
     background-position: center;
+}
+
+.readTime::before {
+    background-image: url(../../assets/images/blog/clock.png);
+}
+
+.viewsCount::before {
+    background-image: url(../../assets/images/blog/eye.png);
 }
 
 .articleInfo .description {

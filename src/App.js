@@ -28,6 +28,7 @@ import ContactUs from './pages/ContactUs/ContactUs';
 import Team from './pages/Team/Team';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import MobileMenu from './components/MobileMenu/MobileMenu';
+import NotFound from './pages/NotFound/NotFound';
 
 const AppContext = React.createContext(); 
 
@@ -72,7 +73,7 @@ const App = () => {
                     <Route path="/article/:id/" element={<Article />} />
                     <Route path="/about-us/contact-us" element={<ContactUs />} />
                     <Route path="/about-us/team" element={<Team />} />
-                    <Route path="*" element={<div> сосок</div> } />
+                    <Route path="*" element={<NotFound /> } />
 
                 </Routes>
                 

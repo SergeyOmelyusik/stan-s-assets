@@ -45,7 +45,6 @@ const MobileMenu = ({active,setActive}) => {
                     <h3>About Us</h3>
                         <ul>
                             <li><NavLink to='/about-us/team'>Team</NavLink></li>
-                            <li><NavLink to='/about-us/join-the-team'>Join the team</NavLink></li>
                             <li><NavLink to='/about-us/contact-us'>Contact Us</NavLink></li>
                         </ul>
                 </div>

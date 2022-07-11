@@ -45,6 +45,7 @@
 
 .form input,
 .form textarea {
+    font-family: 'Montserrat', sans-serif;
     padding: 10px;
     width: calc(80% - 20px);
     margin: 10px;
