@@ -1,0 +1,158 @@
+.container {
+    width: 80%;
+    max-width:1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacts {
+    padding: 30px 0;
+}
+
+.contacts h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contacts .description{
+    font-size: 14px;
+    color: #242424;
+    margin-bottom: 40px;
+}
+
+.contactsBlock {
+    display: flex;
+    align-items: center;
+}
+
+.contactsInfo,
+.contactsFormWrapper {
+    width: 50%;
+}
+
+.contactsLine {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.contactsLine::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.contactsLine:nth-of-type(1)::before { 
+    background-image: url(../../assets/images/icons/contacts/location.png);
+}
+
+.contactsLine:nth-of-type(2)::before { 
+    background-image: url(../../assets/images/icons/contacts/phone.png);
+}
+
+.contactsLine:nth-of-type(3)::before { 
+    background-image: url(../../assets/images/icons/contacts/whatsapp.png);
+}
+
+.contactsLine:nth-of-type(4)::before { 
+    background-image: url(../../assets/images/icons/contacts/skype.png);
+}
+
+.contactsLine:nth-of-type(5)::before { 
+    background-image: url(../../assets/images/icons/contacts/email.png);
+}
+
+.contactsLine:nth-of-type(6)::before { 
+    background-image: url(../../assets/images/icons/contacts/facebook.png);
+}
+
+.contactsFormWrapper {
+    display: flex;
+    padding: 40px 0;
+    justify-content: center;
+    background-image: url(../../assets/images/icons/contacts/1.png), url(../../assets/images/icons/contacts/2.png), url(../../assets/images/icons/contacts/3.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left top, left bottom, right top;
+    min-height: 500px;
+}
+
+.contactsForm {
+    width: 60%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    box-shadow: 20px 20px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+.contactsForm input,
+.contactsForm textarea {
+    outline: none;
+    border: 2px solid #eee;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.contactsForm textarea {
+    min-height: 100px;
+}
+
+.btnSend {
+    border: none;
+    color: #fff;
+    background-color: #2DA531;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:1200px) {
+    .contactsForm {
+        width: 70%;   
+    }
+}
+
+@media (max-width:1024px) {
+    .contactsBlock {
+        flex-direction: column;
+    }
+    
+    .contactsFormWrapper {
+        width: 70%;
+    }
+
+    .contactsInfo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts .description{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .contactsForm {
+        width: 100%;   
+    }
+}
+
+@media (max-width:570px) {
+    .contactsFormWrapper {
+        width: 100%;
+    }
+}

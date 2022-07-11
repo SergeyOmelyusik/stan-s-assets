@@ -1,0 +1,31 @@
+.productItem {
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.3);
+}
+ 
+.productItem .image img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.productItem .info {
+    padding: 10px;
+}
+
+.productItem .info h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #0D6EB7;
+    margin-bottom: 10px;
+}
+
+.productItem .info p{
+    font-size: 14px; 
+}
+
+

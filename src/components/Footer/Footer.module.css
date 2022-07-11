@@ -1,0 +1,89 @@
+.container {
+    width: 80%;
+    max-width:1280px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footerLogo {
+    margin: 0px 20px 20px 20px;
+}
+
+.footer svg{
+    margin: 0;
+}
+
+.footerContent {
+    min-height: 220px;
+    background-color: #194484;
+    margin-top: -10px;
+}
+
+.footerNav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerNavRow {
+    width: calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 20px 20px 20px;
+}
+
+.footerNavRow h3 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footerNavRow ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.footerNavRow ul li {
+    margin-bottom: 15px;
+}
+
+.footerNavRow ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width:1235px) {
+   .footerContent .container {
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+@media (max-width:768px) {
+    .footerNavRow {
+        width: calc(50% - 40px);
+    }
+    .footerNav {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:650px) {
+    .footerNavRow {
+        width: 100%;
+        
+    }
+}
+
+@media (max-width:440px) {
+
+    .footerLogo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerNavRow {
+        margin: 0 20px 0px 0px;
+    }
+}

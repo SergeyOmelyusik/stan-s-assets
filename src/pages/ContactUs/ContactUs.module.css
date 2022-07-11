@@ -1,0 +1,161 @@
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;   
+}
+
+.contactFormBlock {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.info {
+    width: 40%;
+}
+
+.info h2 {
+    font-size: 22px;
+    color: #194484;
+    text-transform: uppercase;  
+}
+
+.info p {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form {
+    width: 40%;
+    padding: 20px;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form p {
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.form input,
+.form textarea {
+    padding: 10px;
+    width: calc(80% - 20px);
+    margin: 10px;
+    border: 2px solid rgb(214, 213, 213);
+}
+
+.btnSubmit {
+    background-color: #2DA531;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    width: 80%;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.contactInfo {
+    display: flex;  
+}
+
+.contactInfoRow {
+    padding: 30px;
+}
+
+.contactInfoRow p {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contactInfoRow .location::before,
+.contactInfoRow .phone::before,
+.contactInfoRow .whats::before,
+.contactInfoRow .skype::before,
+.contactInfoRow .mail::before,
+.contactInfoRow .facebook::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contactInfoRow .location::before {
+    background-image: url(../../assets/images/icons/contacts/location.png);
+}
+
+.contactInfoRow .phone::before {
+    background-image: url(../../assets/images/icons/contacts/phone.png);
+}
+
+.contactInfoRow .whats::before {
+    background-image: url(../../assets/images/icons/contacts/whatsapp.png);
+}
+
+.contactInfoRow .skype::before {
+    background-image: url(../../assets/images/icons/contacts/skype.png);
+}
+
+.contactInfoRow .mail::before {
+    background-image: url(../../assets/images/icons/contacts/email.png);
+}
+
+.contactInfoRow .facebook::before {
+    background-image: url(../../assets/images/icons/contacts/facebook.png);
+}
+
+@media (max-width: 1100px) {
+     .form {
+        width: 50%;
+     }
+}
+
+@media (max-width: 800px) {
+    .form {
+       width: 70%;
+    }
+
+    .contactFormBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .contactInfo {
+        flex-direction: column; 
+        
+    }
+
+    .contactInfoRow {
+        padding: 0;
+    }
+
+    
+    .contactInfoRow p {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 670px) {
+    .form {
+        width: 100%;
+    }
+    
+}

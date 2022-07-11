@@ -1,0 +1,45 @@
+.container {
+    width: 80%;
+    max-width:1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.partners {
+    padding: 200px 0;
+    min-height: 1000px;
+    background-image: url(../../assets/images/partners.png);
+    background-size: cover;
+}
+
+.partnersList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partnersItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fff;
+    min-width: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 160px;
+    box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s linear;
+}
+
+.partnersItem:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width:768px) {
+    .partnersItem {
+    max-width: 150px;
+    height: 100px;
+    
+}
+}

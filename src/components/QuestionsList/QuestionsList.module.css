@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    
+}
+
+.questionList {
+    width: 100%;
+    text-align: left;
+    padding: 20px 60px;
+    border-left: 5px solid #0D6EB7;
+    border-right: 5px solid #0D6EB7;
+    border-radius: 15px;
+}
+
+.questionList li {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #0D6EB7;
+}
+

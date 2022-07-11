@@ -1,0 +1,115 @@
+.mobile_menu {
+    opacity: 0;
+    transform: translateX(-100%);
+    width: 0;
+    height: 0;
+}
+
+.mobile_menu.active {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(41, 100, 227, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 5;
+    transition: transform 0.5s;
+}
+
+.btn_close {
+    position: absolute;
+    top: 40px;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btn_close span{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+}
+
+.btn_close span::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color:#fff;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.menu_container {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu_container h3 {
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.menu_container a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.menu_row ul {
+    padding-left: 25px;
+    list-style: none;
+}
+
+.menu_row ul li {
+    padding: 5px 0;
+}
+
+.btn-contact {
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px 0;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .mobile_menu.active {
+        width: 70%;
+    }
+}
+
+@media (max-width: 660px) {
+    .btn_close {
+        top: 20px;
+        right: 2%;
+    }
+}
+
+@media (max-width: 550px) {
+    .mobile_menu.active {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .mobile_menu.active {
+        width: 100%;
+    }
+}
+
+
+

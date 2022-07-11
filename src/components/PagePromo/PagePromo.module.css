@@ -1,0 +1,50 @@
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagePromoTitle {
+    width: 45%;
+}
+
+.pagePromoTitle h2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #194484;
+    text-transform: uppercase;
+}
+
+.pagePromoImage {
+    width: 50%;
+}
+
+.pagePromoImage img {
+    object-fit: contain;
+    /* width: 100%;
+    height: 100%; */
+}
+
+@media (max-width:1050px) {
+    .pagePromo .container {
+        flex-direction: column;
+    }
+    .pagePromoTitle {
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .pagePromoImage {
+        width: 100%;
+        height: 350px;
+    }
+
+    .pagePromoImage img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%; 
+    }
+}

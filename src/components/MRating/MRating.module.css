@@ -1,0 +1,13 @@
+.rating {
+    background-color: #F0F5FC;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.rating h3 {
+    margin-bottom: 30px;
+    font-size: 22px;
+}

@@ -1,0 +1,103 @@
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input,
+.form textarea {
+    display: block;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #3c3c3c;
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.form h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.form .btn__send {
+    padding: 10px 20px;
+    color: #23b632;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #23b632;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contacts-line {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.contacts-line::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.contacts-line:nth-of-type(1)::before { 
+    background-image: url(../../assets/images/icons/contacts/location.png);
+}
+
+.contacts-line:nth-of-type(2)::before { 
+    background-image: url(../../assets/images/icons/contacts/phone.png);
+}
+
+.contacts-line:nth-of-type(3)::before { 
+    background-image: url(../../assets/images/icons/contacts/whatsapp.png);
+}
+
+.contacts-line:nth-of-type(4)::before { 
+    background-image: url(../../assets/images/icons/contacts/skype.png);
+}
+
+.contacts-line:nth-of-type(5)::before { 
+    background-image: url(../../assets/images/icons/contacts/email.png);
+}
+
+.contacts-line:nth-of-type(6)::before { 
+    background-image: url(../../assets/images/icons/contacts/facebook.png);
+}
+
+
+@media (max-width: 870px) {
+    .contact-form {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .contacts-line {
+        margin: 5px 0; 
+    }
+
+    .form h2 {
+        margin-bottom: 20px;
+    }
+    .form {width: 100%;}
+}

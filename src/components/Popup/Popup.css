@@ -1,0 +1,41 @@
+.popup-modal {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(100%);
+}
+
+.popup-modal.active {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 0.5s;
+    transform: translateY(0);
+}
+
+.popup-content {
+    transition: 0.5s;
+    display: none; 
+}
+
+.popup-content.active {
+    background-color: #fff;
+    width: 60%;
+    border-radius: 15px;
+    padding: 20px;
+    display: block;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .popup-content.active {
+        width: 80%;
+    }
+}
